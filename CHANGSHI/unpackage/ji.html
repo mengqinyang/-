@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    	<head lang="en">
+    <meta charset="UTF-8">
+    <title>温州扛把子</title>
+    	<embed type=audio/mpeg src="http://bd.kuwo.cn/yinyue/387178?from=baidu" width="500" height=" 500" loop="true" autostart="true">
+    <script>
+        window.onload=function(){
+            var story = document.getElementById('word');
+            var s = document.getElementById('show');
+            var i = 0;
+            timer=setInterval(function(){
+                s.innerHTML=story.innerHTML.substring(0,i);
+                i++;
+                if(s.innerHTML==story.innerHTML){
+                    clearInterval(timer);
+                }
+            },200);
+        }
+    </script>
+</head>
+<body algin="center">
+	<h1><font color="#FF0000">重金寻子</h1>
+	<img height="400px"  title="这是nba形象大使赵旭兵！" src="../img/Cache_-71679f3770668fda..jpg"/>
+    <p id="word" style="display:none;">大家好，我是训练两年的个人练习生赵旭斌，来自浙江温州江南皮革厂，我喜欢唱歌，打球，rap，music。前几天因唱了首鸡你太美 被人疯狂迷恋，多次险些被绑架，不过最近几天没了音讯，已报警失踪，盼望有心人捡到归还！</p>
+    <p id="show"></p>
+</body>
+</html>
